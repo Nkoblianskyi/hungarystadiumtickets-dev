@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Mail, MapPin } from 'lucide-react'
 import Image from 'next/image'
+import { LegalDisclaimerBar } from '@/components/legal-disclaimer-bar'
 
 const navLinks = [
   { href: '/', label: 'Főoldal' },
@@ -17,6 +18,7 @@ const legalLinks = [
 export function Footer() {
   return (
     <footer className="mt-24">
+      <LegalDisclaimerBar />
 
       {/* Main footer body */}
       <div className="border-t border-white/50 bg-white/45 backdrop-blur-2xl">
