@@ -15,20 +15,7 @@ export default function EventsPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen pt-24">
-        {/* Google Ads required disclaimer — top 20%, solid bar, permanently visible */}
-        <div className="bg-red-700 text-white">
-          <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
-            <p className="text-center text-base font-bold leading-snug sm:text-lg">
-              Ez a weboldal egy{' '}
-              <strong className="underline underline-offset-2">vторинний piac (secondary market)</strong>{' '}
-              — perепродált jegyeket hasonlítunk össze.{' '}
-              <strong className="underline underline-offset-2">Az árak meghaladhatják a névértéket.</strong>{' '}
-              Jegyeket NEM értékesítünk és fizetési adatokat NEM kezelünk.
-            </p>
-          </div>
-        </div>
-
+      <main className="min-h-screen pt-44">
         <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
           {/* Page header */}
           <div className="mb-10">
@@ -58,13 +45,6 @@ export default function EventsPage() {
                 {sport}
               </span>
             ))}
-          </div>
-
-          {/* Inline reminder — solid, Google-compliant */}
-          <div className="mb-8 rounded-xl bg-red-700 px-5 py-4 text-white">
-            <p className="text-base font-bold leading-relaxed">
-              <strong>VТОРИННИЙ PÁC:</strong> Ez az oldal perепrodált jegyek ár-összehasonlítását végzi. Az árak meghaladhatják a névértéket. Jegyeket NEM értékesítünk.
-            </p>
           </div>
 
           {/* Events grid */}

@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { LegalDisclaimerBar } from '@/components/legal-disclaimer-bar'
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen overflow-hidden pt-20">
+    <section className="relative isolate flex min-h-[100dvh] flex-col overflow-hidden pt-32 sm:pt-36">
       {/* Background image layer */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -18,26 +19,18 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/40" />
       </div>
 
-      {/* Google Ads required disclaimer — top 20%, permanently visible, solid opaque bar */}
-      <div className="relative z-10 bg-red-700 text-white">
-        <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
-          <p className="text-center text-base font-bold leading-snug sm:text-lg">
-            Ez a weboldal egy{' '}
-            <strong className="underline underline-offset-2">másodlagos piac (secondary market)</strong>{' '}
-            — viszonteladott jegyeket hasonlítunk össze.{' '}
-            <strong className="underline underline-offset-2">Az árak meghaladhatják a névértéket.</strong>{' '}
-            Jegyeket NEM értékesítünk és fizetési adatokat NEM kezelünk.
-          </p>
-        </div>
+      {/* Disclaimer: min ~20% viewport height, grows with text — no scroll, sits below fixed header */}
+      <div className="relative z-10 w-full min-w-0 shrink-0">
+        <LegalDisclaimerBar variant="hero" />
       </div>
 
-      {/* Main hero content */}
-      <div className="relative z-10 flex min-h-[78vh] items-center">
-        <div className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-          <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+      {/* Main hero content — fills remaining space */}
+      <div className="relative z-10 flex min-h-0 flex-1 items-center py-6 sm:py-8 lg:py-10">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-8 lg:grid-cols-2 lg:items-center lg:gap-10">
             {/* Left column: headline + CTA */}
             <div>
-              <h1 className="mb-5 text-3xl font-black leading-[1.1] text-foreground text-balance sm:text-4xl lg:text-5xl">
+              <h1 className="mb-4 text-2xl font-black leading-[1.12] text-foreground text-balance sm:text-3xl lg:text-4xl">
                 Sportjegy
                 <br />
                 <span className="text-primary">ár-összehasonlítás</span>

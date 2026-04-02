@@ -98,23 +98,10 @@ const partners = [
 
 export default function PartnersPage() {
   return (
-    <div className="min-h-screen">
+    <>
       <Header />
 
-      {/* Google Ads required disclaimer */}
-      <div className="bg-red-700 text-white" style={{ paddingTop: '5rem' }}>
-        <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
-          <p className="text-center text-base font-bold leading-snug sm:text-lg">
-            Ez a weboldal egy{' '}
-            <strong className="underline underline-offset-2">másodlagos piac (secondary market)</strong>{' '}
-            — peréprodált jegyeket hasonlítunk össze.{' '}
-            <strong className="underline underline-offset-2">Az árak meghaladhatják a névértéket.</strong>{' '}
-            Jegyeket NEM értékesítünk és fizetési adatokat NEM kezelünk.
-          </p>
-        </div>
-      </div>
-
-      <main className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <main className="mx-auto min-h-screen max-w-7xl px-4 py-16 pt-44 sm:px-6 lg:px-8">
         {/* Page header */}
         <div className="mb-14 text-center">
           <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-sky-200/70 bg-white/65 px-4 py-1.5 text-sm font-semibold text-sky-700 shadow-sm backdrop-blur-sm">
@@ -223,8 +210,10 @@ export default function PartnersPage() {
 
               {/* Bottom disclaimer per card */}
               <div className="border-t border-white/50 bg-red-700 px-7 py-3">
-                <p className="text-sm font-bold text-white">
-                  Vásárlás kizárólag a {partner.name} weboldalán lehetséges. Ez az oldal nem vesz részt a tranzakcióban. Az árak meghaladhatják a névértéket.
+                <p className="text-sm leading-snug text-white">
+                  Vásárlás kizárólag a {partner.name} weboldalán lehetséges; a teljes fizetendő összeg (díjak, adók) a
+                  fizetési adatok megadása előtt ott jelenik meg. Ez az oldal nem vesz részt a tranzakcióban. Másodlagos
+                  piac — az árak meghaladhatják a névértéket.
                 </p>
               </div>
             </GlassCard>
@@ -241,6 +230,6 @@ export default function PartnersPage() {
       </main>
 
       <Footer />
-    </div>
+    </>
   )
 }

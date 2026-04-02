@@ -39,12 +39,22 @@ export function EventCard({ event }: EventCardProps) {
           <h3 className="mb-1 text-base font-bold leading-tight text-foreground line-clamp-2 flex-1">
             {event.title}
           </h3>
-          <p className="mb-4 text-sm text-muted-foreground">
+          <p className="mb-3 text-sm text-muted-foreground">
             {event.venue}, {event.city}
           </p>
 
+          {/* Disclaimer — larger type than title/body: not ticket sale, price comparison only */}
+          <div className="mb-3 rounded-xl border border-red-200/80 bg-red-50/95 px-3 py-2.5 shadow-sm">
+            <p className="text-lg font-black leading-tight text-red-900 sm:text-xl">
+              Nem jegyértékesítés
+            </p>
+            <p className="mt-1 text-base font-bold leading-snug text-red-800">
+              Csak ár-összehasonlítás — nem adunk el jegyeket.
+            </p>
+          </div>
+
           {/* Price comparison block */}
-          <div className="mb-4 rounded-xl border border-primary/15 bg-gradient-to-r from-orange-50/80 to-amber-50/60 p-3">
+          <div className="mt-auto rounded-xl border border-primary/15 bg-gradient-to-r from-orange-50/80 to-amber-50/60 p-3">
             <p className="mb-0.5 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
               Ár-összehasonlítás
             </p>
@@ -63,13 +73,6 @@ export function EventCard({ event }: EventCardProps) {
             </p>
           </div>
 
-          {/* DISCLAIMER — Google-compliant: same size as body text, permanently visible */}
-          <div className="rounded-xl bg-red-700 px-4 py-3 text-white">
-            <p className="text-sm font-bold leading-snug sm:text-base">
-              <strong className="block font-black">VТОРИННИЙ PÁC — NEM ÉRTÉKESÍTÜNK JEGYEKET</strong>
-              Perепродált jegyek ár-összehasonlítása. Az árak meghaladhatják a névértéket. Vásárlás a partner weboldalán zajlik.
-            </p>
-          </div>
         </div>
       </GlassCard>
     </Link>

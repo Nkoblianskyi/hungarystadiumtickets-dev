@@ -3,7 +3,9 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
-import { Menu, X, Ticket } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
+import Image from 'next/image'
+import { LegalDisclaimerBar } from '@/components/legal-disclaimer-bar'
 
 const navLinks = [
   { href: '/', label: 'Főoldal' },
@@ -19,6 +21,7 @@ export function Header() {
 
   return (
     <header className="fixed top-0 z-50 w-full">
+      {pathname !== '/' && <LegalDisclaimerBar />}
       {/* Floating pill nav */}
       <div className="mx-auto max-w-6xl px-4 pt-4 sm:px-6">
         <div className="flex items-stretch gap-3">
@@ -28,9 +31,7 @@ export function Header() {
             href="/"
             className="flex shrink-0 items-center gap-2.5 rounded-2xl border border-white/70 bg-white/65 px-4 py-0 shadow-[0_2px_16px_oklch(0.6_0.04_220/0.1)] backdrop-blur-2xl transition-all hover:bg-white/80"
           >
-            <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary">
-              <Ticket className="h-4 w-4 text-white" strokeWidth={2.5} />
-            </div>
+            <Image src="/favicon.ico" alt="Logo" width={40} height={40} />
             <div className="leading-none">
               <span className="block text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Hungary</span>
               <span className="block text-sm font-black tracking-tight text-foreground">STADIUM<span className="text-primary">TICKETS</span></span>

@@ -33,17 +33,6 @@ export function EventsPreviewSection() {
           </Link>
         </div>
 
-        {/* Warning banner — permanently visible, solid, Google-compliant */}
-        <div className="mb-10 rounded-xl bg-red-700 px-6 py-5 text-white">
-          <p className="text-base font-bold leading-relaxed sm:text-lg">
-            <strong className="block text-lg font-black sm:text-xl">FIGYELMEZTETÉS — VТОРИННИЙ PÁC / SECONDARY MARKET</strong>
-            Ez az oldal egy <strong>vторинний piac</strong> — partnereinken keresztül{' '}
-            <strong>perепродált jegyeket</strong> hasonlítunk össze.{' '}
-            <strong>Az árak meghaladhatják a névértéket.</strong>{' '}
-            Jegyeket NEM értékesítünk, fizetési adatokat NEM kezelünk. Az árak tájékoztató jellegűek — vásárlás előtt ellenőrizze a partner weboldalán.
-          </p>
-        </div>
-
         {/* Cards grid */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {featured.map((event) => (

@@ -6,7 +6,7 @@ export default function PrivacyPolicyPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen pt-24 pb-16">
+      <main className="min-h-screen pt-44 pb-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <span className="mb-3 inline-block rounded-full border border-sky-200/80 bg-white/70 px-4 py-1.5 text-sm font-semibold text-sky-700 shadow-sm backdrop-blur-sm">

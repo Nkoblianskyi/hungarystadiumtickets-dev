@@ -35,20 +35,7 @@ export default async function EventDetailPage({ params }: Props) {
   return (
     <>
       <Header />
-      <main className="min-h-screen pt-24">
-        {/* Google Ads required disclaimer — top 20%, solid bar, permanently visible */}
-        <div className="bg-red-700 text-white">
-          <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
-            <p className="text-center text-base font-bold leading-snug sm:text-lg">
-              Ez a weboldal egy{' '}
-              <strong className="underline underline-offset-2">vторинний piac (secondary market)</strong>{' '}
-              — perепrodált jegyeket hasonlítunk össze.{' '}
-              <strong className="underline underline-offset-2">Az árak meghaladhatják a névértéket.</strong>{' '}
-              Jegyeket NEM értékesítünk és fizetési adatokat NEM kezelünk.
-            </p>
-          </div>
-        </div>
-
+      <main className="min-h-screen pt-44">
         {/* Hero image */}
         <div className="relative h-72 overflow-hidden sm:h-96">
           <Image
@@ -133,11 +120,13 @@ export default async function EventDetailPage({ params }: Props) {
               <div>
                 <h2 className="mb-4 text-xl font-black text-foreground">Ár-összehasonlítás</h2>
 
-                {/* Disclaimer — inline price comparison, Google-compliant */}
+                {/* Árak + átláthatóság (Google: teljes összeg a fizetés előtt a partnernél) */}
                 <div className="mb-5 rounded-xl bg-red-700 px-5 py-4 text-white">
-                  <p className="text-base font-bold leading-relaxed">
-                    <strong className="block font-black text-lg">VТОРИННИЙ PÁC — NEM ÉRTÉKESÍTÜNK JEGYEKET</strong>
-                    Az alábbi árak perепrodált jegyekre vonatkoznak és meghaladhatják a névértéket. Az árak tájékoztató jellegűek — vásárlás a partner weboldalán zajlik. Fizetési adatokat NEM kezelünk.
+                  <p className="text-base leading-relaxed">
+                    <strong className="font-semibold">Másodlagos piac, viszonteladott jegyek.</strong> Az alábbi árak
+                    tájékoztató jellegűek; a végleges összeg — beleértve a díjakat és adókat — a partner weboldalán,{' '}
+                    <strong className="font-semibold">a fizetési adatok megadása előtt</strong> látható. Jegyeket nem
+                    értékesítünk; fizetési adatokat nem kezelünk.
                   </p>
                 </div>
 
@@ -211,16 +200,16 @@ export default async function EventDetailPage({ params }: Props) {
                 </div>
               </GlassCard>
 
-              {/* Warning sidebar card — solid, Google-compliant */}
+              {/* Másodlagos piac — rövid emlékeztető */}
               <div className="rounded-xl bg-red-700 p-6 text-white">
-                <p className="mb-2 text-base font-black">VТОРИННИЙ PÁC</p>
-                <ul className="space-y-2 text-base font-bold">
+                <p className="mb-2 text-base font-semibold">Másodlagos piac</p>
+                <ul className="space-y-2 text-base">
                   {[
-                    'Perепродált jegyek ár-összehasonlítása',
-                    'Az árak meghaladhatják a névértéket',
-                    'Jegyeket NEM értékesítünk',
-                    'Fizetési adatokat NEM kezelünk',
-                    'Vásárlás a partner weboldalán zajlik',
+                    'Viszonteladott jegyek árainak összehasonlítása',
+                    'Az árak meghaladhatják a jegy névértékét',
+                    'Jegyeket nem értékesítünk',
+                    'Fizetési adatokat nem kezelünk',
+                    'Vásárlás és teljes ár a partner weboldalán, a fizetés előtt',
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2">
                       <span className="mt-0.5 shrink-0 font-black">—</span>

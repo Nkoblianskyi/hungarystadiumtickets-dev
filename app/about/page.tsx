@@ -43,19 +43,7 @@ export default function AboutPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen pt-24">
-        {/* Disclaimer strip */}
-        <div className="border-b border-red-200/70 bg-red-50/80 backdrop-blur-md">
-          <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col items-center gap-1 text-center">
-              <p className="text-sm font-black uppercase tracking-widest text-red-700">Fontos tájékoztatás</p>
-              <p className="text-base font-semibold text-red-700 sm:text-lg">
-                Nem értékesítünk jegyeket. Kizárólag ár-összehasonlítást nyújtunk.
-              </p>
-            </div>
-          </div>
-        </div>
-
+      <main className="min-h-screen pt-44">
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
           {/* Page header */}
           <div className="mb-12">

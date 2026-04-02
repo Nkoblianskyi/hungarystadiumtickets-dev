@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { Ticket, Mail, MapPin } from 'lucide-react'
+import { Mail, MapPin } from 'lucide-react'
+import Image from 'next/image'
 
 const navLinks = [
   { href: '/', label: 'Főoldal' },
@@ -17,18 +18,6 @@ export function Footer() {
   return (
     <footer className="mt-24">
 
-      {/* Disclaimer — Google-compliant: secondary market, resold tickets, prices above face value */}
-      <div className="bg-red-700 px-4 py-6 sm:py-8 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-5xl text-center">
-          <p className="text-base font-bold leading-relaxed text-white sm:text-lg lg:text-xl">
-            <strong className="block text-lg font-black sm:text-xl lg:text-2xl">
-              VТОРИННИЙ PÁC (SECONDARY MARKET)
-            </strong>
-            Ez a weboldal egy vторинний piac — perепrodált jegyeket hasonlítunk össze. Az árak meghaladhatják a névértéket. Jegyeket NEM értékesítünk és fizetési adatokat NEM kezelünk.
-          </p>
-        </div>
-      </div>
-
       {/* Main footer body */}
       <div className="border-t border-white/50 bg-white/45 backdrop-blur-2xl">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -39,9 +28,7 @@ export function Footer() {
             {/* Brand */}
             <div className="sm:col-span-2 lg:col-span-1">
               <Link href="/" className="mb-4 flex items-center gap-2.5">
-                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary shadow-sm">
-                  <Ticket className="h-5 w-5 text-white" strokeWidth={2.5} />
-                </div>
+                <Image src="/favicon.ico" alt="Logo" width={32} height={32}  />
                 <div className="leading-none">
                   <span className="block text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Hungary</span>
                   <span className="block text-sm font-black tracking-tight text-foreground">

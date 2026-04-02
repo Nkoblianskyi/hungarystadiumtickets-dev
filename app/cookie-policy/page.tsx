@@ -46,16 +46,7 @@ export default function CookiePolicyPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen pt-24">
-        {/* Disclaimer strip */}
-        <div className="border-b border-red-200/70 bg-red-50/80 backdrop-blur-md">
-          <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
-            <p className="text-center text-base font-semibold text-red-700">
-              Nem értékesítünk jegyeket. Kizárólag ár-összehasonlítást nyújtunk.
-            </p>
-          </div>
-        </div>
-
+      <main className="min-h-screen pt-44">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="mb-12">
             <span className="mb-3 inline-flex items-center rounded-full border border-primary/25 bg-white/65 px-4 py-1.5 text-sm font-semibold text-primary shadow-sm backdrop-blur-sm">
