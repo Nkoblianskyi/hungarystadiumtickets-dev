@@ -80,9 +80,9 @@ const partners = [
     sports: ['Labdarúgás', 'Kézilabda', 'Kosárlabda', 'Jégkorong'],
   },
   {
-    name: 'InterTicket',
-    url: 'https://interticket.hu',
-    displayUrl: 'interticket.hu',
+    name: 'Jegy',
+    url: 'https://jegy.hu',
+    displayUrl: 'jegy.hu',
     tag: 'Magyar platform',
     color: 'text-red-700',
     bg: 'bg-red-600',

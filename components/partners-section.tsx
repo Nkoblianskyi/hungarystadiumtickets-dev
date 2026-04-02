@@ -6,7 +6,7 @@ const partners = [
   { name: 'StubHub', tag: 'Globális platform', color: 'text-purple-600', dot: 'bg-purple-500' },
   { name: 'Viagogo', tag: 'Globális platform', color: 'text-green-600', dot: 'bg-green-500' },
   { name: 'JegyMester', tag: 'Magyar platform', color: 'text-primary', dot: 'bg-primary' },
-  { name: 'InterTicket', tag: 'Magyar platform', color: 'text-orange-600', dot: 'bg-orange-500' },
+  { name: 'Jegy', tag: 'Magyar platform', color: 'text-orange-600', dot: 'bg-orange-500' },
 ]
 
 export function PartnersSection() {

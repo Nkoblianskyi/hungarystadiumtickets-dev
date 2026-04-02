@@ -69,7 +69,7 @@ const faqSections = [
     items: [
       {
         q: 'Mely platformok árait jelenítik meg?',
-        a: 'Jelenleg a TicketMaster, Eventim, JegyMester, InterTicket, StubHub, az F1 Official és más európai platformok árait hasonlítjuk össze. A lista folyamatosan bővül.',
+        a: 'Jelenleg a TicketMaster, Eventim, JegyMester, Jegy, StubHub, az F1 Official és más európai platformok árait hasonlítjuk össze. A lista folyamatosan bővül.',
       },
       {
         q: 'Hogyan vásárolhatok jegyet?',

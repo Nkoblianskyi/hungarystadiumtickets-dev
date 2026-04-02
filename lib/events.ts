@@ -87,7 +87,7 @@ export const events: Event[] = [
     partners: [
       { name: 'JegyMester', price: 5500, url: 'https://jegymester.hu' },
       { name: 'Eventim', price: 5200, url: 'https://eventim.hu' },
-      { name: 'InterTicket', price: 4900, url: 'https://interticket.hu' }
+      { name: 'Jegy', price: 4900, url: 'https://jegy.hu' }
     ]
   },
   {
@@ -176,7 +176,7 @@ export const events: Event[] = [
     image: '/images/event-9.jpg',
     partners: [
       { name: 'JegyMester', price: 4200, url: 'https://jegymester.hu' },
-      { name: 'InterTicket', price: 4000, url: 'https://interticket.hu' },
+      { name: 'Jegy', price: 4000, url: 'https://jegy.hu' },
       { name: 'Eventim', price: 3800, url: 'https://eventim.hu' }
     ]
   },
@@ -230,7 +230,7 @@ export const events: Event[] = [
     image: '/images/event-12.jpg',
     partners: [
       { name: 'JegyMester', price: 3500, url: 'https://jegymester.hu' },
-      { name: 'InterTicket', price: 3300, url: 'https://interticket.hu' },
+      { name: 'Jegy', price: 3300, url: 'https://jegy.hu' },
       { name: 'Eventim', price: 3100, url: 'https://eventim.hu' }
     ]
   },
@@ -284,7 +284,7 @@ export const events: Event[] = [
     image: '/images/event-15.jpg',
     partners: [
       { name: 'JegyMester', price: 3200, url: 'https://jegymester.hu' },
-      { name: 'InterTicket', price: 3000, url: 'https://interticket.hu' },
+      { name: 'Jegy', price: 3000, url: 'https://jegy.hu' },
       { name: 'Eventim', price: 2800, url: 'https://eventim.hu' }
     ]
   }

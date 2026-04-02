@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: 'Melyek az elérhető partnerplatformok?',
-    a: 'Jelenleg a TicketMaster, Eventim, JegyMester, InterTicket, StubHub és más európai platformok árait jelenítjük meg és hasonlítjuk össze.',
+    a: 'Jelenleg a TicketMaster, Eventim, JegyMester, Jegy, StubHub és más európai platformok árait jelenítjük meg és hasonlítjuk össze.',
     category: 'Partnerek',
     catColor: 'bg-violet-100 text-violet-700',
   },
