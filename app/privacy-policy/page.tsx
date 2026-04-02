@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
               Adatvédelmi szabályzat
             </h1>
             <p className="text-lg text-muted-foreground">
-              Utolsó frissítés: 2024. január 15.
+              Utolsó frissítés: 2026.
             </p>
           </div>
 
